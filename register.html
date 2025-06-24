@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>register</title>
+    <link rel="stylesheet" href="/dependencies/CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <form id="formRegister">
+        <div class="formHir">
+            <div class="mainTitle">
+                <h2 class="text-center">Smart Login System</h2>
+            </div>
+            <div class="labels">
+                <input type="text" class="form-control my-4 bg-transparent" placeholder="Enter your name" name="name" id="name" required>
+                <input type="email" class="form-control my-4 bg-transparent" placeholder="Enter your email" name="email" id="email" required>
+                <input type="password" class="form-control my-4 bg-transparent " placeholder="Enter your password" name="password" id="password" required >
+                <!-- <input type="submit" class="btn btn-primary" value="Sign up" id="register"> -->
+                    <button type="submit" id="signup" class="btn btn-outline-info w-100"> Sign up</button>
+                    <div id="succOr">
+                        <p id="succ" class="text-center text-success pt-3 d-none">Register Successfully</p>
+                        <p id="NotSucc" class="text-center text-danger pt-3 d-none">This Email already exists</p>
+                    </div>
+                <div class="btnn d-flex justify-content-center align-items-center">
+                    <span class="text-white p-2">Do You Have Account? </span>
+                    <a href="/login.html">sign in</a>
+                </div>
+            </div>
+        </div>
+    </form>
+
+
+    <script src="/dependencies/js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
