@@ -23,10 +23,10 @@ a{
     color:var(--secColor);
 }
 .formHir{
-    width: 50%;
-    margin: 30px auto;
+    width: 100%;
+    margin: 100px auto;
     padding: 60px;
-    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+    /* box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6); */
 }
 
 #LogEmail::placeholder , #LogPass::placeholder ,#LogPass::placeholder , #name::placeholder , #email::placeholder , #password::placeholder{
@@ -46,4 +46,29 @@ input.form-control , input.form-control:focus  {
     top: 30px;
     right :20%;
     color: white;
+}
+#welcomeMGS{
+    padding: 150px 40px;
+}
+
+/* ==================================================== */
+@media (min-width: 768px){
+
+    
+}
+/* large devices */
+@media (min-width: 1024px){
+    .formHir{
+    width: 50%;
+    margin: 30px auto;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.6);
+}
+}
+/* extra large devices */
+@media (min-width: 1280px){
+
+}
+/* extra extra large devices */
+@media (min-width: 1536px){
+
 }

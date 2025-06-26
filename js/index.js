@@ -70,10 +70,15 @@ const welcomeMGS = document.getElementById('welcomeMGS');
         welcomeMGS.innerHTML = `Welcome Mr. ${currentUser.name}`;
         document.getElementById('btnOut').removeAttribute('hidden');
     }else{
-        welcomeMGS.innerHTML = `Hallo , please Login First <a href = "login.html">Login</a>`;
+        if(welcomeMGS){
+            welcomeMGS.innerHTML = `Hallo , please Login First <a href = "login.html">Login</a>`;
+        }
     }
-    document.getElementById('btnOut').addEventListener('click', function(){
-        localStorage.removeItem('user')
-        window.location.href = 'login.html'
-    })
+    let btnOUT = document.getElementById('btnOut');
+    if(btnOUT){
+        btnOUT.addEventListener('click', function(){
+            localStorage.removeItem('user')
+            window.location.href = 'login.html'
+        })
+    }
     
