@@ -47,9 +47,13 @@ if (loginForm) {
                 window.location.href = 'index.html';
             } else {
                 inPass.classList.replace('d-none', 'd-block');
+            inEmail.classList.replace('d-block','d-none' );
+
             }
         } else {
             inEmail.classList.replace('d-none', 'd-block');
+            inPass.classList.replace('d-block','d-none' );
+
         }
     });
 }
@@ -72,3 +76,4 @@ const welcomeMGS = document.getElementById('welcomeMGS');
         localStorage.removeItem('user')
         window.location.href = 'login.html'
     })
+    
